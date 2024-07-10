@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>BigTime to USD Converter</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>BigTime a USD</h1>
+    <div>
+      <label for="amount">Cantidad:</label>
+      <input type="number" id="amount" step="0.0001" value="1">
+    </div>
+    <div>
+      <label for="fromCurrency">De:</label>
+      <select id="fromCurrency">
+        <option value="BIGTIME">BigTime (BIGTIME)</option>
+        <option value="USD">US Dollar (USD)</option>
+      </select>
+    </div>
+    <div>
+      <label for="toCurrency">a:</label>
+      <select id="toCurrency">
+        <option value="USD">US Dollar (USD)</option>
+        <option value="BIGTIME">BigTime (BIGTIME)</option>
+      </select>
+    </div>
+    <div>
+      <button id="convert">Convertir</button>
+    </div>
+    <div class="result-container">
+      <label for="result">Resultado:</label>
+      <input type="text" id="result" readonly>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <div class="footer">
+    <p>Creado por SpiralCrypto /
+      API de Coingecko.com
+    </p>
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html>
